@@ -3,7 +3,7 @@ jQuery(function () {
     var $headerContainer = $('.header-container');
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 24) {
+        if ($(this).scrollTop() > 0) {
             if (!$headerContainer.hasClass('header-container_floating')) {
                 $headerContainer.addClass('header-container_floating');
             }
@@ -58,12 +58,9 @@ jQuery(function () {
 });
 
 $(function () {
-    $(".center").slick({
+    $(".interface__slider").slick({
         centerMode: !0,
         centerPadding: "0px",
-        arrows: !0,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
         slidesToShow: 3,
         responsive: [{
             breakpoint: 992,
@@ -72,22 +69,18 @@ $(function () {
                 prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
                 centerMode: !0,
-                centerPadding: "0px",
+                centerPadding: "40px",
                 slidesToShow: 1
             }
         }, {
             breakpoint: 768,
             settings: {
-                arrows: !0,
-                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
                 centerMode: !0,
                 slidesToShow: 1
             }
         }, {
             breakpoint: 425,
             settings: {
-                arrows: !1,
                 prevArrow: !1,
                 nextArrow: !1,
                 centerMode: !0,
@@ -109,9 +102,6 @@ $(function () {
         centerMode: !0,
         centerPadding: "0px",
         focusOnSelect: !0,
-        arrows: !0,
-        prevArrow: '<button type="button" class="slick-p"><i class="fas fa-chevron-left fa-2x"></i></button>',
-        nextArrow: '<button type="button" class="slick-n"><i class="fas fa-chevron-right fa-2x"></i></button>',
         responsive: [{
             breakpoint: 480,
             settings: {
@@ -127,31 +117,5 @@ $(function () {
                 nextArrow: !1
             }
         }]
-    }), $(".plan-2").click(function () {
-        $(".plan__btn").hasClass("btn-animateF") ? (console.log("Added btn-animateB"), $(".plan__btn").removeClass("btn-animateF"), $(".plan__btn").addClass("btn-animateB"), $(".plan-2").css("color", "#b4b5b6"), $(".plan-1").css("color", "#26292c")) : (console.log("Removed btn-animateB"), $(".plan__btn").addClass("btn-animateF"), $(".plan__btn").removeClass("btn-animateB"), $(".plan-2").css("color", "#26292c"), $(".plan-1").css("color", "#b4b5b6"))
-    }), $(".plan-1").click(function () {
-        $(".plan__btn").hasClass("btn-animateB") ? (console.log("Added btn-animateF"), $(".plan__btn").removeClass("btn-animateB"), $(".plan__btn").addClass("btn-animateF"), $(".plan-2").css("color", "#26292c"), $(".plan-1").css("color", "#b4b5b6")) : (console.log("Removed btn-animateF"), $(".plan__btn").addClass("btn-animateB"), $(".plan__btn").removeClass("btn-animateF"), $(".plan-2").css("color", "#b4b5b6"), $(".plan-1").css("color", "#26292c"))
-    }), $(".plan-2").click(function () {
-        $(".plan__pro").hasClass("plan-active") && ($(".plan__pro").first().removeClass("plan-active"), $(".plan__pro").last().addClass("plan-active"))
-    }), $(".plan-1").click(function () {
-        $(".plan__pro").hasClass("plan-active") && ($(".plan__pro").last().removeClass("plan-active"), $(".plan__pro").first().addClass("plan-active"))
-    }), $(".plan__pro").click(function () {
-        $(".plan__btn").hasClass("btn-animateF") ? ($(".plan__btn").removeClass("btn-animateF"), $(".plan__btn").addClass("btn-animateB"), $(".plan-2").css("color", "#b4b5b6"), $(".plan-1").css("color", "#26292c"), $(".plan__pro").hasClass("plan-active") && ($(".plan__pro").last().removeClass("plan-active"), $(".plan__pro").first().addClass("plan-active"))) : ($(".plan__btn").addClass("btn-animateF"), $(".plan__btn").removeClass("btn-animateB"), $(".plan-2").css("color", "#26292c"), $(".plan-1").css("color", "#b4b5b6"), $(".plan__pro").hasClass("plan-active") && ($(".plan__pro").first().removeClass("plan-active"), $(".plan__pro").last().addClass("plan-active")))
-    }), $(".item-burger").click(function () {
-        $(".burger-menu").toggleClass("burger-active")
-    }), $(document).on("click", 'a[href^="#"]', function (a) {
-        a.preventDefault(), $("html, body").animate({
-            scrollTop: $($.attr(this, "href")).offset().top
-        }, 650)
-    }), $(window).scroll(function () {
-        $(".block-left").each(function () {
-            var a = $(this).offset().top,
-                n = $(window).scrollTop();
-            a < n + 550 && $(this).addClass("bounceInLeft")
-        }), $(".block-right").each(function () {
-            var a = $(this).offset().top,
-                n = $(window).scrollTop();
-            a < n + 550 && $(this).addClass("bounceInRight")
-        })
     })
 });
