@@ -249,7 +249,7 @@ a:hover
 
 .round-button_apple
 {
-    background-image: url('../img/ic_apple_white.svg');
+    background-image: url('../media/ic_apple_white.svg');
     background-position: 14px 50%;
     background-repeat: no-repeat;
     padding-left: 48px;
@@ -257,7 +257,7 @@ a:hover
 
 .round-button_play
 {
-    background-image: url('../img/ic_play_black.svg');
+    background-image: url('../media/ic_play_black.svg');
     background-position: 32px 50%;
     background-repeat: no-repeat;
     border-radius: 25px;
@@ -270,7 +270,7 @@ a:hover
 .round-button_app-store,
 .footer-description__button
 {
-    background: #131315 url('../img/ic_apple_white.svg') no-repeat 22px 50%;
+    background: #131315 url('../media/ic_apple_white.svg') no-repeat 22px 50%;
     text-align: left;
 }
 
@@ -368,12 +368,12 @@ nav
 
 .menu-icon
 {
-    background: url('../img/ic_menu_black.svg') no-repeat 50% 50%;
+    background: url('../media/ic_menu_black.svg') no-repeat 50% 50%;
 }
 
 .menu-close
 {
-    background: url('../img/ic_close_white.svg') no-repeat 50% 50%;
+    background: url('../media/ic_close_white.svg') no-repeat 50% 50%;
     margin-right: 0;
     position: absolute;
     right: 0;
@@ -421,7 +421,7 @@ nav
 
 .top-description
 {
-    background: #f5f6f8 url('../img/header-background.jpg') no-repeat 50% 100%;
+    background: #f5f6f8 url('../media/header-background.jpg') no-repeat 50% 100%;
     padding-top: 134px;
     text-align: center;
 }
@@ -504,7 +504,7 @@ nav
 
 .video-player__close
 {
-    background: url('../img/ic_close_black.svg') no-repeat 50% 50%;
+    background: url('../media/ic_close_black.svg') no-repeat 50% 50%;
     cursor: pointer;
     display: inline-block;
     height: 32px;
@@ -551,12 +551,12 @@ nav
 
 .feature-column__title_lock
 {
-    background-image: url('../img/ic_lock_blue_48px.svg');
+    background-image: url('../media/ic_lock_blue_48px.svg');
 }
 
 .feature-column__title_alarm
 {
-    background-image: url('../img/ic_alarm_clock_blue_48px.svg');
+    background-image: url('../media/ic_alarm_clock_blue_48px.svg');
 }
 
 .feature-column__text,
@@ -616,7 +616,7 @@ nav
 
 .iphone-feature__arrow-icon
 {
-    background: url('../img/ic_arrow_right_white.svg') no-repeat 50% 50%;
+    background: url('../media/ic_arrow_right_white.svg') no-repeat 50% 50%;
     display: inline-block;
     float: right;
     height: 42px;
@@ -632,7 +632,7 @@ nav
 .partner-evernote
 {
     display: inline-block;
-    background: url('../img/partners.png') no-repeat;
+    background: url('../media/partners.png') no-repeat;
     height: 35px;
     margin: 8px 30px 8px 0;
     width: 125px;
@@ -685,14 +685,6 @@ nav
     margin: 0;
 }
 
-.iphone-screens__image
-{
-    background: url('../img/iphone-screens.png') no-repeat 50% 0;
-    background-size: 945px auto;
-    height: 411px;
-    margin-top: 39px;
-}
-
 .invitation-block
 {
     padding: 38px 0 60px;
@@ -741,9 +733,73 @@ nav
     display: none;
 }
 
+.interface__slider {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.interface__img {
+	margin: 92px auto 0px auto; /* Так как слик слайдер задавал ширину блока, поэтому я не мог выровнять картинку, необходимо было прописать auto for side margin для того чтобы выровнять ее */
+	border: 1px solid #d5d5d8;
+}
+
+
+.interface__frame {
+	position: absolute;
+	pointer-events: none;
+	left: 50%;
+	margin-left: -186.5px;
+}
+
+.slick-arrow {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	position: absolute;
+	border: none;
+	cursor: pointer;
+}
+
+.slick-arrow:focus {
+	outline: none;
+}
+
+.slick-next {
+	top: 50%;
+	right: 10px;
+	transition: all 0.4s ease;
+}
+
+.slick-next:hover {
+	color: #000;
+	background: #f5f5f8;
+	right: 5px;
+}
+
+.slick-prev {
+	top: 50%;
+	left: 10px;
+	z-index: 200;
+	transition: all 0.4s ease;
+}
+
+.slick-prev:hover {
+	color: #000;
+	background: #f5f5f8;
+	left: 5px;
+}
+
 .invitation-form__button-arrow
 {
-    background: url('../img/ic_arrow_right_white.svg') no-repeat 50% 50%;
+    background: url('../media/ic_arrow_right_white.svg') no-repeat 50% 50%;
     display: inline-block;
     float: right;
     height: 42px;
@@ -857,14 +913,14 @@ nav
 
 .customers__item-rating
 {
-    background: #fff url('../img/ic_star_grey.svg') repeat-x;
+    background: #fff url('../media/ic_star_grey.svg') repeat-x;
     margin: 0 auto;
     width: 160px;
 }
 
 .customers__rating-value
 {
-    background: #fff url('../img/ic_star_orange.svg') repeat-x;
+    background: #fff url('../media/ic_star_orange.svg') repeat-x;
 }
 
 .customers__rating-value_one
@@ -993,7 +1049,7 @@ nav
 
 .plan-item__feature-item
 {
-    background: url('../img/ic_mark_green.svg') no-repeat 0 50%;
+    background: url('../media/ic_mark_green.svg') no-repeat 0 50%;
     background-size: 16px 16px;
     display: inline-block;
     margin: 0;
@@ -1140,7 +1196,7 @@ nav
 .footer-description__socials-pinterest,
 .footer-description__socials-linkedin
 {
-    background: url('../img/socials_sprite.svg') no-repeat 0 0;
+    background: url('../media/socials_sprite.svg') no-repeat 0 0;
     background-size: 48px 144px;
     display: inline-block;
     height: 24px;
@@ -1326,14 +1382,14 @@ nav
 
     .iphone-feature
     {
-        background: url('../img/iphone-feature.png') no-repeat 50% 50%;
+        background: url('../media/iphone-feature.png') no-repeat 50% 50%;
         background-size: 1361px auto;
         line-height: 599px;
     }
 
     .map-feature
     {
-        background: url('../img/map-feature.png') no-repeat 50% 50%;
+        background: url('../media/map-feature.png') no-repeat 50% 50%;
         background-size: 1428px auto;
         line-height: 372px;
         padding: 100px 0;
