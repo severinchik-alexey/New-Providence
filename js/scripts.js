@@ -65,9 +65,6 @@ $(function () {
         responsive: [{
             breakpoint: 992,
             settings: {
-                arrows: !0,
-                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
                 centerMode: !0,
                 centerPadding: "40px",
                 slidesToShow: 1
@@ -76,6 +73,7 @@ $(function () {
             breakpoint: 768,
             settings: {
                 centerMode: !0,
+                centerPadding: "40px",
                 slidesToShow: 1
             }
         }, {
