@@ -283,6 +283,7 @@ a:hover {
     transition: padding .3s, background-color .3s;
     width: 100%;
     z-index: 999;
+    display: flex;
 }
 
 .header-container_floating {
