@@ -77,14 +77,19 @@ $(function () {
                 slidesToShow: 1
             }
         }, {
-            breakpoint: 425,
+            breakpoint: 420,
             settings: {
-                prevArrow: !1,
-                nextArrow: !1,
                 centerMode: !0,
-                centerPadding: "40px",
+                centerPadding: "0px",
                 slidesToShow: 1
             }
+        },    {
+                breakpoint: 340,
+                settings: {
+                    centerMode: !0,
+                    centerPadding: "0",
+                    slidesToShow: 1
+                      }
         }]
     }), $(".slider-for").slick({
         slidesToShow: 1,

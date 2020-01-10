@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'Varela Round';
     font-style: normal;
     font-weight: 400;
@@ -359,7 +359,7 @@ nav
 .menu-close
 {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     float: left;
     height: 42px;
     margin-right: 16px;
@@ -617,7 +617,7 @@ nav
 .iphone-feature__arrow-icon
 {
     background: url('../media/ic_arrow_right_white.svg') no-repeat 50% 50%;
-    display: inline-block;
+    display: block;
     float: right;
     height: 42px;
     width: 42px;
@@ -776,7 +776,7 @@ nav
 .invitation-form__button-arrow
 {
     background: url('../media/ic_arrow_right_white.svg') no-repeat 50% 50%;
-    display: inline-block;
+    display: block;
     float: right;
     height: 42px;
     width: 24px;
@@ -1425,7 +1425,7 @@ nav
     .menu-container
     {
         background-color: transparent;
-        display: inline-block;
+        display: block;
         float: right;
         overflow-y: visible;
         padding: 0;
@@ -1528,7 +1528,7 @@ nav
 
     .plan-items
     {
-        display: inline-block;
+        display: block;
         float: right;
         line-height: normal;
         width: 57%;
