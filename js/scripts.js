@@ -60,7 +60,7 @@ jQuery(function () {
 $(function () {
     $(".interface__slider").slick({
         centerMode: !0,
-        centerPadding: "0px",
+        centerPadding: "10px",
         slidesToShow: 3,
         responsive: [{
             breakpoint: 992,
@@ -80,14 +80,14 @@ $(function () {
             breakpoint: 420,
             settings: {
                 centerMode: !0,
-                centerPadding: "0px",
+                centerPadding: "0",
                 slidesToShow: 1
             }
         },    {
                 breakpoint: 340,
                 settings: {
                     centerMode: !0,
-                    centerPadding: "0",
+                    centerPadding: "20px",
                     slidesToShow: 1
                       }
         }]

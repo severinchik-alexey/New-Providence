@@ -656,10 +656,6 @@ nav {
 }
 
 .interface__slider {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -667,7 +663,7 @@ nav {
 }
 
 .interface__img {
-    margin: 92px auto 0px auto;
+    margin: 92px auto;
     /* Так как слик слайдер задавал ширину блока, поэтому я не мог выровнять картинку, необходимо было прописать auto for side margin для того чтобы выровнять ее */
     border: 1px solid #d5d5d8;
 }
@@ -1114,6 +1110,11 @@ nav {
     .invitation-form__button {
         width: 164px;
     }
+
+    .slick-prev,
+.slick-next{
+    z-index: -100;
+}
 
     .invitation-form__button span:first-child {
         display: inline;
