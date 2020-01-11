@@ -135,6 +135,12 @@ h6,
     font-weight: 300;
 }
 
+.logotype {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+
 a {
     color: #267df4;
     text-decoration: none;
@@ -1094,6 +1100,7 @@ nav {
         font-size: 1.25em;
     }
 
+  
     .feature-column {
         float: left;
         max-width: 46%;
@@ -1172,6 +1179,7 @@ nav {
 
 @media screen and (min-width: 768px) {
 
+ 
     h3 {
         font-size: 2.625em;
     }
@@ -1222,6 +1230,10 @@ nav {
 }
 
 @media screen and (min-width: 1000px) {
+
+    .logotype {
+        display: none;
+    }
 
     .header-container {
         padding: 44px 0;
