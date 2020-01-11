@@ -21,7 +21,7 @@ jQuery(function () {
 
     $('.round-button_play').click(function (event) {
         event.preventDefault();
-        $('body').prepend('<div class="video-player"><div class="video-player__block"><a class="video-player__close"></a><div class="video-player__wrapper"><iframe src="https://www.youtube.com/embed/sEDctELIm3I" frameborder="0" allowfullscreen></iframe></div></div></div>');
+        $('body').prepend('<div class="video-player"><div class="video-player__block"><a class="video-player__close"></a><div class="video-player__wrapper"><iframe src="https://www.youtube.com/embed/5osJMAnzwkE" frameborder="0" allowfullscreen></iframe></div></div></div>');
         $('.video-player__close').click(function () {
             $(this).parents('.video-player').remove();
         });

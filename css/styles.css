@@ -412,7 +412,7 @@ nav {
 }
 
 .video-player {
-    background: rgba(255, 255, 255, .75);
+    background: rgba(255, 255, 255, 0.9);
     box-sizing: border-box;
     height: 100%;
     padding: 16px;
