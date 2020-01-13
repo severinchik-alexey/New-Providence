@@ -27,25 +27,6 @@ jQuery(function () {
         });
     });
 
-    $('.customers-toggles__item').click(function () {
-        slideCustomersTo($(this).index());
-    });
-
-    function slideCustomersTo(index) {
-        $('.customers-carousel').css('left', '-' + (index * 100) + '%');
-        var customersToggles = $('.customers-toggles__item');
-        customersToggles.removeClass('customers-toggles__item_active');
-        customersToggles.eq(index).addClass('customers-toggles__item_active');
-    }
-
-    setInterval(function () {
-        if (!$('.customers-toggles').is(':hover') && !$('.customers-carousel').is(':hover')) {
-            var slides = $('.customers-carousel').children().length;
-            var current = $('.customers-toggles__item_active').index();
-            slideCustomersTo((current + 1) % slides);
-        }
-    }, 5000);
-
     $('.plan-text__switch-button').click(function () {
         $('.plan-text__switch-button').addClass('round-button_disabled');
         $(this).removeClass('round-button_disabled');
@@ -91,34 +72,20 @@ $(function () {
                     slidesToShow: 1
                       }
         }]
-    }), $(".slider-for").slick({
+    }),  $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: !1,
-        fade: !0,
-        asNavFor: ".slider-nav"
-    }), $(".slider-nav").slick({
-        slidesToShow: 3,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: ".slider-for",
-        dots: !1,
-        centerMode: !0,
-        centerPadding: "0px",
-        focusOnSelect: !0,
-        responsive: [{
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 0,
-                asNavFor: ".slider-for",
-                dots: !1,
-                centerMode: !0,
-                centerPadding: "0px",
-                focusOnSelect: !0,
-                arrows: !1,
-                prevArrow: !1,
-                nextArrow: !1
-            }
-        }]
-    })
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+      });
+              
 });
